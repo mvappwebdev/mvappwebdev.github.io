@@ -196,6 +196,30 @@ section .right
     
 }
 
+.page-hero
+{
+    box-sizing: border-box;
+    height: 350px;
+    margin-bottom: 50px;
+    padding: 00px 0px;
+    
+}
+.page-hero p
+{
+    margin: 0px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.page-hero h1
+{
+    font-size: 40px;
+    line-height: 1.25em;
+    font-family: "Domine";
+    font-weight: 800;
+    color: var(--accent);
+}
+
 #hero
 {
     box-sizing: border-box;
@@ -204,8 +228,9 @@ section .right
 #hero > div
 {
     margin-bottom: 115px;
+    
 }
-#hero .left
+.page-hero .left, #hero .left
 {
     flex-basis: 175%;
 }

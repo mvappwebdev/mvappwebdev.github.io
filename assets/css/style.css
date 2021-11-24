@@ -1,0 +1,480 @@
+@import url('https://fonts.googleapis.com/css?family=Avenir:100,200,300,regular,500,600,700,800,900');
+@import url('https://fonts.googleapis.com/css?family=Catamaran:100,200,300,regular,500,600,700,800,900');
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:100,200,300,regular,500,600,700,800,900');
+
+/** KEYFRAMES **/
+@keyframes fadein{
+    0%
+    {
+        opacity: 0;
+    }
+    100%
+    {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeup
+{
+    0%
+    {
+        opacity: 0;
+        transform: translateY( 10px );
+    }
+    100%
+    {
+        opacity: 1;
+        transform: translateY( 0px );
+    }
+}
+
+
+/* GENERAL */
+
+html, body{
+    font-family: "Catamaran";
+    padding: 0;
+    margin: 0;
+    background-color: var(--bg);
+    opacity: 0;
+    animation: fadein 0.2s 0.1s forwards;
+}
+
+.level
+{
+    animation: fadeup 0.5s both;
+}
+
+.text
+{
+    color: var(--text);
+    text-decoration: none;
+}
+
+h1
+{
+    font-size: 30px;
+    font-weight: 800;    
+    margin: 0px;
+}
+
+section .link
+{
+    color: var(--accent);
+}
+
+.inverted .link
+{
+    color: var(--accent2)
+}
+
+
+/* HEADER */
+
+#header
+{
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 125px;
+    text-align: left;
+    /* border: 1px solid white; */
+}
+
+
+#logowrapper
+{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+}
+
+#logo
+{
+    height: 100%;
+    margin-right: 10px;
+    border-radius: 40px;    
+}
+
+#header a
+{
+    padding: 0px 20px;
+    border-right: 1px solid #fff2;
+    font-size: 15px;
+    transition: 0.15s;
+    display: inline-block;
+
+}
+#header a:last-of-type
+{
+    border-right: none;
+}
+
+#header a:hover
+{
+    opacity: 0.8;
+    transform: translateY(-1px);
+}
+
+#header #links
+{
+    width: 100%;
+}
+#right
+{
+    white-space: nowrap;
+    margin-right: 3px;
+}
+
+.button, #header .button, #header a.button
+{
+    border: 1px solid var(--text);
+    border-radius: 5px;
+    border-right: 1px solid var(--text);
+    padding: 5px 20px;
+    transition: 0.2s;
+}
+
+.button:hover
+{
+    background-color: var(--text);
+    color: var(--bg);
+}
+
+/* SECTION */
+
+section{
+    padding: 100px 0px;
+    /* border: 1px solid white; */
+    color: var(--text);
+    background-color: var(--bg);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    text-align: left; 
+    position: relative;
+}
+section > div
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    /* border: 1px solid white; */
+    /* padding-right: 5vw; */
+    text-align: left;
+}
+section .left
+{
+    padding-left: 10%;
+    padding-right: 2%;
+}
+section .right
+{
+    padding-right: 10%;
+    padding-left: 2%;
+}
+.inverted
+{
+    background-color: var(--text);
+    color: var(--bg);
+    
+}
+
+.accentbg
+{
+    background-color: var(--accent);
+    color: var(--bg);
+}
+
+.accentbg .button
+{
+    
+}
+
+#hero
+{
+    box-sizing: border-box;
+    height: calc( 90vh - 200px );
+}
+#hero > div
+{
+    margin-bottom: 115px;
+}
+#hero .left
+{
+    flex-basis: 175%;
+}
+
+#hero .right
+{
+    padding-right: 5%;
+}
+#hero .right div
+{   
+    /* -webkit-mask-image:-webkit-gradient(linear, right top, 1% top, from(rgba(0,0,0,0.9)), to(rgba(0,0,0,0))); */
+    /* transform: translate( -5vw, -2.5vw ); */
+    height: 100%;
+    width: 100%;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#hero .right img
+{
+    width: 100%;
+    /* max-height: 100%; */
+    border-radius: 100%;
+}
+
+#hero h1
+{
+    font-size: 50px;
+    line-height: 1.25em;
+    font-family: "Domine";
+    font-weight: 800;
+    color: var(--accent)
+}
+
+#hero p
+{
+    font-family: "Avenir";
+    font-size: 18px;
+    line-height: 1.4em;
+    font-weight: 100;
+}
+
+#bigstatementthing .right
+{
+    flex-basis: 200%;
+    font-weight: 100;
+}
+
+#bigstatementthing .left div
+{
+    height: 100%;
+    width: 100%;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0px;
+}
+#bigstatementthing .left img
+{
+    height: 100%;
+    position: absolute;
+    bottom: 0px;
+}
+
+#events h1
+{
+    margin: 0px;
+
+}
+#events > div > div > p
+{
+    margin: 0px;
+    opacity: 0.5;
+    margin-bottom: 40px;
+}
+
+#events > div > div > h1
+{
+    font-size: 35px;
+}
+
+.event
+{
+    width: 100%;
+    height: 110px;
+    background-color: var(--text);
+    box-shadow: 2px 6px 4px #0002;
+    display: flex;
+    margin: 20px 0px;
+    transition: 0.15s;
+}
+.event:hover
+{
+    transform: scale(1.05);
+    cursor: pointer;
+    box-shadow: 3px 7px 10px #0002;
+}
+
+.date
+{
+    background-color:var(--bg);
+    width: 110px;
+    height: 100%;
+    color: white;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.date .day
+{
+    font-family: 'Roboto Mono';
+    font-weight: 100;
+    font-size: 45px;
+    margin: 0px 0px;
+    padding: 0px;
+    padding-bottom: 5px;
+    line-height: 0.9em; 
+}
+
+.date .month
+{
+    font-family: 'Roboto Mono';
+    font-weight: 800;
+    letter-spacing: 0.2em;
+    font-size: 25px;
+    margin: 0px 0px;
+    line-height: 1em;
+    transform: translateX(0.1em);
+}
+
+
+.event .content
+{
+    padding: 20px;
+    text-align: left;
+    position: relative;
+}
+.event .content .title
+{
+    margin: 0px 0px;
+    color: var(--bg);
+    line-height: 0.9em;
+}
+
+.event .content .short-description
+{
+    margin: 0px;
+    color: var(--bg);
+    opacity: 0.5;
+    font-size: 14px;
+}
+
+.event .content .other-details
+{
+    color: var(--bg);
+    margin: 0px;
+    position: absolute;
+    left: 20px;
+    bottom: 15px;
+    opacity: 0.8;
+}
+
+.event .content .other-details .time
+{
+    margin: 0px;
+    justify-content: center;
+    font-size: 13px;
+}
+
+.time span
+{
+    font-family: "Domine";
+    padding-left: 4px;
+}
+
+
+
+
+
+
+
+
+footer
+{
+    max-width: 1200px;
+    display: flex;
+    width: 100%;
+    text-align: left;
+    padding: 50px 0px;
+}
+
+
+
+footer > div
+{
+    /* border: 1px solid white; */
+    height: 100%;
+}
+
+.logoandsocial .logo
+{
+    width: 80px;
+    border-radius: 100%;
+}
+
+.logoandsocial p
+{
+    font-family: "Avenir";
+    opacity: 0.5;
+    margin: 0px;
+    margin-top: 10px;
+    font-size: 20px;
+    line-height: 1.5em;
+    font-weight: 100;
+}
+.logoandsocial
+{
+    width: 100%;
+}
+.social
+{
+    margin-top: 10px;
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+.social a
+{
+    font-size: 25px;
+    opacity: 0.5;
+    transition: 0.2s;
+    margin-right: 30px;
+    color: var(--text)
+}
+
+.social a:hover
+{
+    opacity: 1;
+}
+
+
+.quicklinks h2, .otherlinks h2
+{
+    font-weight: 200;
+    margin: 0px;
+    font-size: 20px;
+    margin-bottom: 15px;
+    font-family: 'Domine';
+    white-space: nowrap;
+}
+.quicklinks a, .otherlinks a
+{
+    width: 100%;
+    display: inline-block;
+    margin: 2px 0px;
+    padding: 0px;
+    transition: opacity 0.1s;
+    opacity: 0.5;
+}
+
+.quicklinks a:hover, .otherlinks a:hover
+{
+    opacity: 1;
+}
+
+

@@ -1,5 +1,5 @@
 document.querySelectorAll( ".level" ).forEach( (el,idx) => {
-    el.style.animationDelay = ( idx/8 + 0.1 ) + "s";
+    el.style.animationDelay = ( idx/12 + 0.1 ) + "s";
 })
 
 

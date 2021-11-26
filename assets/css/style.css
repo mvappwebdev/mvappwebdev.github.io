@@ -503,3 +503,30 @@ footer > div
 }
 
 
+
+.aboutusdescription .left
+{
+    flex-basis: 50%;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.aboutusdescription .left h1
+{
+    font-size: 30px;
+    line-height: 1.1em;
+}
+
+.aboutusdescription .right
+{
+    /* flex-basis: 50%; */
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.aboutusdescription p
+{
+    margin: 0px;
+    font-size: 20px;
+}
+

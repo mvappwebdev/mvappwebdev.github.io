@@ -24,3 +24,20 @@ document.querySelectorAll( "event" ).forEach( ( el, idx ) => {
     `
     el.parentElement.appendChild( event );
 });
+
+document.querySelectorAll( "person" ).forEach( ( el, idx ) => {
+    let personCard = document.createElement( "div" );
+    personCard.className = "person-card"
+    personCard.innerHTML = `
+    <div class = "image" style = "background-image: url( '${el.getAttribute('image')}' )"></div>
+    <div class = "description">
+        <h1>${el.getAttribute( 'name' )}</h1>
+        <h2>${el.getAttribute( 'title' )}</h2>
+        <p>
+        ${el.getAttribute( 'description' )}
+        </p>
+    </div>
+    `;
+    el.parentElement.appendChild( personCard );
+    // el.remove();
+})

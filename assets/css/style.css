@@ -554,7 +554,7 @@ footer > div
     height: 480px;
     position: relative;
     border: 1px solid white;
-    box-shadow: 1px 1px 10px #b0eaff22;
+    box-shadow: 1px 1px 15px #b0eaff44;
 }
 
 .person-card .image
@@ -573,7 +573,7 @@ footer > div
     position: absolute;
     bottom: 0px;
     padding: 20px 18px;
-    transform: translateY( calc( 100% - 96px ));
+    transform: translateY( calc( 100% - 96px ) );
     width: 100%;
     box-sizing: border-box;
     transition: 0.2s; 
